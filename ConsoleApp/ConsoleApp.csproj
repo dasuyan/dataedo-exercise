@@ -44,10 +44,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DataReader.cs" />
+    <Compile Include="ImportedObject.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="FixList_MateuszDrabarek.txt" />
     <None Include="App.config" />
     <Content Include="data.csv">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>

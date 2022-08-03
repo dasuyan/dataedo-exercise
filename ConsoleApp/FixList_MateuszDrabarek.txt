@@ -1,0 +1,24 @@
+﻿ *
+ * @author Mateusz Drabarek
+ * @version 1.0
+ */
+ Recruitment task for Dataedo, solved by Mateusz Drabarek
+ */
+ 
+1. Removed a typo in the spelling of the file name in the DataReader ("dataa.csv" to "data.csv"). ![PROGRAM COULDN'T COMPILE]!
+2. Changed usage to "var" where possible.
+3. Removed minor redundant code.
+4. Checked if imported lines are empty or invalid, i.e. have less than 7 columns. ![PROGRAM COULDN'T COMPILE]!
+5. "Main" should be private and "Program" can be static.
+6. Replaced "for (int i = 0; i < importedLines.Count; i++)" with "foreach (var importedLine in importedLines)".
+7. The "ImportedObjects" list shouldn't be initialized with an empty object. ![PROGRAM COULDN'T COMPILE]!
+8. Removed base class for ImportedObject, as it's not adding to the functionality in this case.
+9. Removed unnecessary parameter from "public void ImportAndPrintData".
+10. Inverted multiple if-statements in "public void ImportAndPrintData" to reduce nesting.
+11. Removed "Console.ReadLine();" at the end of "public void ImportAndPrintData" to make the program exit automatically.
+12. Moved class ImportedObject to a separate file for more  and set its modifier to internal.
+13. Renamed ImportedObjects list to _importedObjects and added a private modifier.
+14. Changed the NumberOfChildren field type (in ImportedObject) from double to int, because in this case we operate on just integers.
+15. Fixed styling (mainly in ImportedObject class).
+16. Removed unused directives in both Program.cs and DataReader.cs.
+
